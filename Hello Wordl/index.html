@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  <head>
+
+     <meta charset="utf-8">
+     <title>Czas Zlecenia</title>
+
+     <meta name="description" content="Oblicz czas zlecenia">
+     <meta name="keywords" content="czas zlecenia">
+     <meta name="author" content="Michał">
+
+     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet"> 
+     <link rel="stylesheet" href="dev/main.min.css">
+     <script type="text/javascript" src="jquery.js"></script>
+     <script src="script.js"></script>
+     <script src="zegar.js"></script>
+
+  </head>
+  <body>
+    <main>
+    <div class="left">
+      <div class="left_top">
+      <header><img src="img/logo1.png"></header>
+      <div id="zegar"></div>
+      <div class="decoration2"></div>
+      </div>
+        <div class="left_bot">
+           <div class="decoration1"></div>
+           <div class="text">Take</div>
+           <div class="text1">your time</div>
+           <footer>&copy Michał Mackewicz, email:m.mackiewicz07@gmail.com</footer>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="right">
+      <div class="pick">
+        <div class="chose1">Własne godziny</div>
+        <div class="chose2">Standardowe godziny</div>
+        
+      </div>
+
+    <div class="window">
+      <form class="dane" id="dane">
+        <div class="one">
+         <div class="helper">
+          <input id="SLM_DATE" type="text"  class="date" placeholder="SLM DATE"> 
+          <input id="CIT_DATE" type="text" class="date"  placeholder="CIT DATE">
+        </div> 
+        <div class="helper1">
+          <input id="SLM_TIME" type="text"  class="time" placeholder="SLM TIME">
+          <input id="CIT_TIME" type="text" class="time"  placeholder="CIT TIME">
+          </div> 
+        <input type="submit" class="submit" value="Oblicz">
+        </div>
+        <div class="two">
+          <div class="helper">
+          <input id="PFT_DATE" type="text"  class="date" placeholder="Obecne PFT DATE"> 
+          </div>
+          <div class="helper1">
+          <input id="PFT_TIME" type="text"  class="time" placeholder="Obecne PFT TIME"> 
+          </div>
+          <div class="new_pft">Nowe PFT</div>
+        </div>
+        <div class="back">&lt</div>
+       </form>
+    </div>
+    <div class="window1">
+     <form class="czas" id="own_time">
+       <div class="one1">
+      <input id="OD" type="text"  class="time" placeholder="CZAS OD"> 
+      <input id="DO" type="text" class="time"  placeholder="CZAS DO">
+       </div>
+       <div class="two1">
+      <input type="submit" class="submit" value="Ustaw">
+      </div>
+      <div class="back">&lt</div>
+     
+     </form>
+    </div>
+   
+    </div>
+    </main>
+  </body>
+</html>

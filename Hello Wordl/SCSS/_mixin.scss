@@ -1,0 +1,77 @@
+@mixin field ()
+{
+    font-size:14px;
+    padding: 0;
+    height:40px;
+    width:193px;
+    display:block;
+    border:3px solid #7e8785;
+    border-radius: 12px;
+    margin-left:2%;
+    margin-right:2%;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size:17px;
+    color:#6a756d;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+  
+}
+
+@mixin side ()
+{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height:100%;
+}
+@mixin chose ()
+{
+    height:33%;
+    width:35%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 122px 0px 122px 0px;
+    -moz-border-radius: 122px 0px 122px 0px;
+    -webkit-border-radius: 122px 0px 122px 0px;
+    border: 2px solid #fff;
+    background-color:$decoration_color ;
+    color:white;
+    animation:text_animation;
+    animation-duration: 2s;
+    opacity: 0.7;
+}
+@mixin form ()
+{
+    height:28%;
+    width:38%;
+    text-align: center;
+    border-radius: 122px 0px 122px 0px;
+    -moz-border-radius: 122px 0px 122px 0px;
+    -webkit-border-radius: 122px 0px 122px 0px;
+    border: 2px solid #fff;
+    background-color:$decoration_color ;
+    color:white;
+    animation:text_animation;
+    animation-duration: 2s;
+    opacity: 0.7;
+}
+@mixin time ()
+{
+    height:24%;
+    width:23%;
+    text-align: center;
+    border-radius: 122px 0px 122px 0px;
+    -moz-border-radius: 122px 0px 122px 0px;
+    -webkit-border-radius: 122px 0px 122px 0px;
+    border: 2px solid #fff;
+    background-color:$decoration_color ;
+    color:white;
+    animation:text_animation;
+    animation-duration: 2s;
+    opacity: 0.7;
+
+}
