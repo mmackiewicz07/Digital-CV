@@ -1,0 +1,524 @@
+body
+{
+    position:absolute;
+    width:100%;
+    padding:0;
+    margin:0;
+    font-family: 'Rubik', sans-serif;
+    background-image: url('img/tlo.png');
+}
+main
+{
+    width:85%;
+    height:85%;
+    border: 2px solid black;
+    margin-right:10%; 
+    margin-left:8%; 
+    margin-top:5%;
+    margin-bottom:5%;
+    border-radius:30px;
+    overflow: hidden;
+    opacity:0.9;
+    
+    
+}
+#middle
+{
+    
+    display:flex;
+     
+}
+header
+{
+    background-color:#445557;
+    height:370px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 6px;
+    transition: 0.5s;
+  
+    
+    
+}
+header:hover
+{
+    transition: 0.5s;
+    opacity: 0.9;
+}
+footer
+{
+     background-color:#445557;
+     height:100px;
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top:6px;
+     transition: 0.5s;
+    
+}
+footer:hover
+{
+    transition: 0.5s;
+    opacity: 0.9
+}
+#lewo
+{
+     background-color:#445557;
+     height:800px;
+     flex:1;
+     transition: 0.5s;
+}
+#lewo:hover
+{
+    transition: 0.5s;
+    opacity: 0.9
+}
+.prawo:hover
+{
+    transition: 0.5s;
+    opacity: 0.9
+}
+.prawo
+{
+     background-color:#445557;
+     height:800px;
+     flex:1;
+     transition: 0.5s;
+     display:flex;
+     align-items: center;
+    justify-content: center;   
+    
+}
+#foteczka
+{
+    
+    min-width:225px;
+    height:280px;
+    background-color:red;
+    border-radius:20px;
+    margin-left:15%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    opacity: 1;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.zdjecie
+{
+    min-width:225px;
+    height:280px;
+    border-radius:20px;
+    
+    
+}
+@keyframes zadzwon
+{
+    25%
+    {
+        transform: rotate(30deg);
+    }
+    50%
+    {
+        transform: rotate(0deg);
+    }
+    75%
+    {
+        transform: rotate(-30deg);
+    }
+    100%
+    {
+         transform: rotate(0deg);
+    }
+}
+
+@keyframes pojawianie
+{
+    0% { 
+        opacity: 0;
+        transform: translate(-17px,0px)
+        
+       }
+    100% { 
+        opacity: 0.8;
+        transform: none;
+     } 
+} 
+
+@keyframes ta
+{
+    0%
+    {
+        
+    }
+    100%
+    {
+        transform: translate(0,12px);
+        
+    }
+}
+#zegar
+{
+    
+    margin-right:14%; 
+    font-size:40px;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+/*    white-space: nowrap;*/
+    margin-left:50px;
+    word-wrap: nowrap;
+    
+    
+}
+/*{
+    header
+    {
+     flex-direction:column;   
+    }
+}*/
+
+#zegar:hover
+{
+    cursor:grabbing;
+}
+.line1
+{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height:50%;
+    
+    
+}
+.line2
+{
+    display:flex;   
+    justify-content:space-evenly;
+    align-items: center;
+    height:50%;
+    
+}
+.opcja
+{
+    width: 205px;
+    height: 260px;
+    background-color:#b5afac;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border-radius:20px;
+    margin: 0 2.5%;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    
+   
+    
+}
+.opcja:hover .info 
+{
+    opacity:0.8;
+    
+   
+}
+.opcja:hover .font
+{
+    transform: scale(1.1);
+}
+.font
+{
+    flex:8;
+    display: flex;
+    background-color:#b5afac;
+    justify-content: center;
+    align-items: center;
+}
+.info
+{
+    flex:4;
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color:white; 
+    text-align: center;
+    
+    
+
+}
+.opcja1
+{
+    border-radius:20px; 
+    width: 205px;
+    height: 260px;
+    background-color:#b5afac;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin: 0 2.5%;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+
+}
+.opcja2
+{
+    border-radius:20px; 
+    width: 205px;
+    height: 260px;
+    background-color:#b5afac;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin: 0 2.5%;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+
+}
+.opcja2:hover .info
+{
+    opacity: 0.8;
+}
+.opcja2:hover .font
+{
+    transform: scale(1.1);
+}
+.opcja3
+{
+    border-radius:20px; 
+    width: 205px;
+    height: 260px;
+    background-color:#b5afac;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin: 0 2.5%;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.opcja3:hover .info
+{
+    opacity: 0.8;
+}
+.opcja3:hover .font
+{
+    transform: scale(1.1);
+}
+.opcja1:hover .info
+{
+    opacity: 0.8;
+}
+.opcja1:hover .font
+{
+    transform: scale(1.1);
+}
+.stopeczki
+{
+ 
+ width:25%; 
+ height: 100px;
+ text-align: center;
+    
+}
+.stopeczki:hover
+{
+    animation: ta 1.4s 2 alternate;
+}
+
+.stopeczki1
+{
+ width:25%; 
+ height: 100px;
+     text-align: center;
+}
+.stopeczki1:hover
+{
+    animation: ta 1.4s 2 alternate;
+}
+.stopeczki2
+{
+ width:25%; 
+ height: 100px;
+     text-align: center;
+}
+.stopeczki2:hover
+{
+    animation: ta 1.4s 2 alternate;
+}
+.stopeczki3
+{
+      width:25%;
+ height: 100px;
+     text-align: center;
+}
+.stopeczki3:hover
+{
+    animation: ta 1.4s 2 alternate;
+    
+}
+a.tilelink
+{
+ color:black;
+ text-decoration: none;
+ display:block;
+ height: 100px; 
+ width:100%;
+}
+
+#lewo a
+{
+   color:black; 
+}
+.text0
+{
+    padding:80px;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display:none;
+}
+.text1
+{
+    display:none;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.text2
+{
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.text3
+{
+    display:none;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.text4
+{
+    display:none;
+    animation: pojawianie ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    text-align: center;
+    
+}
+.doswiadczenie
+{
+   height: 100%;
+    text-align: justify;
+    color:black;
+}
+.wyksztalcenie
+{
+    height: 100%;
+    text-align: justify;
+    color:black;
+}
+.umiejetnosci
+{
+   height: 100%;
+    text-align: justify;
+    color:black;
+    padding:80px;
+}
+.zainteresowania
+{
+    height: 100%;
+    text-align: justify;
+    color:black;
+    padding:80px;
+}
+.kontakt
+{
+    padding:20px;
+}
+ h3
+{
+    text-align: center;
+    color:black;
+    color:#b5afac;
+}
+ a
+{
+    
+    font-size: 14px;
+    display:block;
+}
+ i
+{
+    font-size:16px;
+}
+ li
+{
+    font-size:18px;
+}
+span
+{
+    font-size:13px;
+    padding-left:10px;
+    padding-right:90px;
+    display:block;
+   
+}
+.foto
+{
+    width:420px;
+    height:290px;
+    background-image:url('img/unnamed.png');
+    opacity: 0.6;
+    border-radius: 15px;
+    display:flex;
+    margin:auto;
+    margin-top:8%;
+}
+.animacja
+{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    animation: zadzwon 3s;
+    animation-iteration-count: infinite;
+    
+}
+.box
+{
+    width:80px;
+    height:20px;
+    background-color: red;
+    border-radius:15px;
+    font-size:14px;
+    text-align: center;
+    background-color:#b5afac;
+    opacity: 0.7;
+    display: none; 
+    position: absolute;
+    z-index: 2;
+    top:0;
+    left:0;
+    padding:2px;
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
